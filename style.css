@@ -1,0 +1,544 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.maincontainer{
+    width:100%;
+    height:100%;
+    background-color:black;
+}
+
+.backgroundcontainer{
+    background-image:url("./images/banner.jpg");
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0; 
+    filter:blur(15px);    
+}
+
+.bgcolor{
+    background-color:rgba(184, 23, 50, 0.4);
+    height:100%;
+    width:100%;
+    }
+
+.contentcontainer{
+    position:relative;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.navbar{    
+height:5rem;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+#logo{
+    height:4.5rem;
+    width:200px;
+    justify-content:flex-start; 
+    margin-left:15px;
+}
+
+.navactions{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-right:30px;
+}
+
+.language{
+    height:30px;
+    width:100px;
+    border-radius:20px;
+    padding:5px 0px 10px px;
+    background-color:black;
+    color:white; 
+    border:1px solid white;; 
+}
+
+.signin button{
+    height:30px;
+    width:80px;
+    border-radius:80px;
+    background-color:white;
+    color:black; 
+}
+
+.banner{
+    background-image:url("./images/banner.jpg");
+    height:80vh;
+    background-size:100%;
+    border-radius:10px;
+    margin:0px 30px 0px 30px;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.overlay{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-image:linear-gradient(transparent, rgba(0,0,0,0.5), black);
+    border-radius:10px;
+    z-index:1;
+}
+
+.bannercontainer{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:2;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;    
+}
+
+.sen1{
+font-size:3.5rem;
+font-weight:bold;
+font-family:poppins,sans-serif;
+margin-bottom:15px;
+}
+
+.sen2{
+    font-size:1.5rem;
+    font-weight:bold;
+    font-family:poppins,sans-serif;
+    margin-bottom:15px;
+}
+
+.sen3{
+     font-size:1rem;
+     font-family:poppins,sans-serif;
+     margin-bottom:15px;
+}
+
+.email{
+    padding:1rem;
+    border-radius:35px;
+    border:1px solid white;
+    background-color:transparent;
+    color:white;
+    font-size:1rem;
+    width:400px;
+}
+
+.start{
+    padding:1rem;
+    border-radius:35px;
+    background-color:red;
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    width:250px;
+}
+
+.carousel, .plan, .join, .faq{
+    margin-top:2rem;
+    color:white;
+}
+
+.carousel h2, .plan h2, .join h2, .faq h2{
+    font-size:1.5rem;
+    margin-left:8rem;
+    font-family:poppins,sans-serif;
+}
+
+.carouselcontainer, .plancontainer, .reasoncontainer, .faqcontainer{
+    display:flex;
+    justify-content:flex-start; 
+    gap:1.2rem; 
+    padding:0 6rem; 
+    width:100%;
+    height:100%; 
+    box-sizing:border-box; 
+}
+
+.carouselcard{
+    position:relative;
+}
+
+.carouselnumber{
+    position:absolute;
+    margin-left:20px;
+
+}
+
+.carouselnumber span{
+    color:rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke:0.125rem rgba(255, 255, 255);
+    text-shadow:0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size:4rem;
+    font-weight:bold;
+}
+    
+
+.carouselimage{
+    margin: 2rem 1rem;
+      
+}
+
+.carouselimage img{
+    width:180px;
+    height:auto;
+    border-radius:20px;
+    flex-shrink:0;
+    gap:30px;
+}
+
+ .plancard, .reasoncard{
+    border-radius: 20px;
+    padding:1rem 2rem;
+    height:40vh;
+    width:23%;
+    margin-top:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border:2px solid rgba(255, 255, 255, 0.37);
+ }
+
+.plancard h2, .reasoncard h2{
+        margin-left:0px;
+        margin-bottom:1rem;
+}
+
+.plancard1{
+    background: linear-gradient(149deg, #1C4072 7%, #172B47 40%, #3120C1 73%);
+}
+
+.plancard2{
+    background: linear-gradient(149deg, #1D529D 7%, #233371 40%, #120C1F 73%);
+}
+
+.plancard3{
+    background: linear-gradient(149deg, #792A95 7%, #38216C 40%, #120C1F 73%);
+}
+
+.plancard4{
+   background: linear-gradient(149deg, #922556 7%, #4e215e 40%, #120c1f 73%);
+}
+
+.plancard p{
+    font-size:1rem;
+}
+
+.reasoncard{
+    background:rgb(47, 47, 47);
+    border:none;
+    height:40vh;
+}
+
+.reasoncard p{
+    font-size:0.9rem;
+}
+
+.svgimg{
+   margin-left:120px;
+}
+
+.faq h2{
+    margin-bottom:5rem;
+}
+
+.faqcard{
+  margin-top:-40px;
+  margin-bottom:20px;
+}
+
+.faqquestion, .faqanswer{
+    padding:2rem;
+    border-radius:10px;
+    background-color:#2e2e2e;
+    margin-bottom:20px;
+}
+
+.faqquestion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.faqquestion span{
+    font-size:2rem;
+    font-weight:900px;
+}
+
+.faqanswer{
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:all 0.3s ease;
+  background-color:#2e2e2e;
+  padding:0 1rem; 
+  border-radius:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.faqcard:hover .faqanswer{
+  max-height:500px; 
+  opacity:1;
+  padding:1rem; 
+}
+
+.faqcontainer{
+    flex-direction:column;
+}
+
+
+.getstarted{
+    display:flex;
+    flex-direction:column;
+    align-items:center;      
+    justify-content:center; 
+    margin:3rem 0;           
+    color:white;            
+    text-align:center;
+}
+
+.getstarted p{
+    margin-bottom:1rem;
+    font-size:1rem;
+    font-family:poppins, sans-serif;
+}
+
+.footer {    
+    background-color: black;
+    padding: 2rem 0;
+}
+
+.footpanel1, .footpanel2{
+   padding:10rem;
+}
+
+.footpanel1 p{
+    margin-top:-130px;    
+    color:#d9d9d9;
+    font-family:poppins, sans-serif;
+    font-size:1rem;
+    margin-bottom:2rem;
+}
+
+.footerlist{
+    display:flex;
+    gap:150px;
+    margin-bottom:1rem;
+}
+
+.footerlist a{
+    font-size:1rem;
+    color:#d9d9d9;
+}
+
+.footerlist li{
+    margin-bottom:20px;
+}
+
+.footpanel2{
+    margin-top:-250px;
+    color:#d9d9d9;
+    font-family:poppins, sans-serif;
+    font-size:1rem;
+}
+
+ /* Responsive Media Queries */
+
+/* Tablets (up to 1024px) */
+@media (max-width:1024px){
+    .carouselcontainer, .plancontainer, .reasoncontainer{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .plancard,  .reasoncard{
+        width:45%;
+        margin-bottom:1rem;
+    }
+
+    .footerlist{
+        flex-wrap:wrap;
+        gap:2rem;
+    }
+}
+
+/* Mobile Devices (up to 768px) */
+@media (max-width:768px){
+    /* Navbar */
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:1rem;
+        height:auto;
+    }
+    #logo{
+        width:120px;
+        height:auto;
+    }
+    .navactions{
+        margin:1rem 0 0 0;
+    }
+
+    /* Banner */
+    .banner{
+        height:60vh;
+        margin:0 10px;
+    }
+    .sen1{
+        font-size:2rem;
+        text-align:center;
+    }
+    .sen2{
+        font-size:1.2rem;
+        text-align:center;
+    }
+    .sen3{
+        font-size:1rem;
+        text-align:center;
+    }
+    #bannerEmail, #getStartedEmail {
+        width:80%;
+    }
+    .start{
+        width:70%;
+        margin-top:10px;
+    }
+
+    /* Carousel */
+    .carouselcontainer{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding:0 1rem;
+        gap:1rem;
+    }
+    .carouselimage img{
+        width:140px;
+    }
+    .carousel h2{
+        margin-left:1rem;
+    }
+
+    /* Plans */
+    .plancontainer{
+        flex-direction:column;
+        align-items:center;
+        padding:0 1rem;
+    }
+    .plancard{
+        width:90%;
+        height:auto;
+    }
+
+    /* Reasons */
+    .reasoncontainer{
+        flex-direction:column;
+        align-items:center;
+        padding:0 1rem;
+    }
+    .reasoncard {
+        width:90%;
+        height:auto;
+    }
+    .reasoncard .lowercontent{
+        justify-content:center;
+    }
+    .reasoncard .svgimg{
+        max-width:60%;
+        margin:0;
+    }
+
+    /* FAQ */
+    .faq h2 {
+        margin-left:1rem;
+        font-size:1.2rem;
+    }
+    .faqcontainer {
+        padding:0 1rem;
+    }
+    .faqquestion{
+        font-size:0.9rem;
+    }
+
+    /* Get Started */
+    .getstarted input{
+        width:80%;
+    }
+    .getstarted .start{
+        width:70%;
+        margin-top:10px;
+    }
+
+    /* Footer */
+    .footpanel1, .footpanel2 {
+        padding:2rem 1rem;
+    }
+    .footerlist {
+        flex-direction:column;
+        gap:2rem;
+    }
+    .footerlist ul{
+        padding:0;
+    }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width:480px){
+    .sen1{
+        font-size:1.5rem;
+    }
+    .sen2{
+        font-size:1rem;
+    }
+    .sen3{
+        font-size:0.9rem;
+    }
+    .start{
+        font-size:0.9rem;
+        padding:0.8rem;
+    }
+    .carouselimage img{
+        width:120px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+  
+
+
